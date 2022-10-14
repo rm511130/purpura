@@ -1,5 +1,5 @@
-# Purpura
-Blender Python Script for converting a USD file into STL format
+# usd2stl
+(Headless) Blender Python Script for converting a USD file into STL format
 
 ## 14 OCT 2022 - Proof of Concept Code by rmeira@physna.com
 - Property of Physna
@@ -10,7 +10,8 @@ Blender Python Script for converting a USD file into STL format
 
 ## Requires: 
    - Blender 3.3 or later
-   - Code is to be executed as headless / background service
+   - Code will be executed as headless / background service
+   - Windows OS (for the time being)
  
 ## How to execute:
 
@@ -18,7 +19,7 @@ Blender Python Script for converting a USD file into STL format
 
 ```
 C:> cd "C:\Program Files\Blender Foundation\Blender 3.3"
-C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\Ralph\3D Objects\Kitchen\Purpura-Executable\purpura-03.py" -- -i "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.usd" -o "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\output" -s "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.stl"
+C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- -i "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.usd" -o "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\output" -s "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.stl"
 ```
 ### Where:
 ```
@@ -26,7 +27,7 @@ C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\R
 
 -P = Python
 
-Python Script = "C:\Users\Ralph\3D Objects\Kitchen\Purpura-Executable\purpura-03.py" 
+Python Script = "C:\Users\Ralph\Python\usd2stl.py" 
 
 -- = subsequent parameters are inputs for the Python code
 
