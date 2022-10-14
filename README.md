@@ -56,7 +56,7 @@ Blender quit
 
 # Step-by-Step Tutorial 
 
-How to use this tool to convert a USD file into STL format
+This tutorial will show you how to use this tool to convert a USD file into STL format
 
 ### 1. Download examples of USD files from: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
 
@@ -64,11 +64,13 @@ How to use this tool to convert a USD file into STL format
 
 In the example above, `kitchen_set.zip` is being downloaded to my `C:\Users\Ralph\Downloads` directory.
 
-### 2. Unzip the contents of the `Kitchen_set.zip` file
+### 2. Unzip the contents of the `Kitchen_set.zip` file and place them in a directory of your choosing:
 
-You should see a directory structure that looks like this:
+When openning the `Kitchen_set.zip` file, you will see a directory structure that looks like this:
 
 ![](./images//KitchenUnzipped.png)
+
+Take these files and place them in a directory of your choosing. In this tutorial we will place the files under `C:\Users\Ralph\3D Objects\Kitchen from Pixar`
 
 
 
