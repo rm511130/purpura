@@ -37,8 +37,7 @@
 ##        Blender 3.3.1 (hash b292cfe5a936 built 2022-10-05 00:49:25)
 ##        Read prefs: C:\Users\Ralph\AppData\Roaming\Blender Foundation\Blender\3.3\config\userpref.blend
 ##        USD import of 'C:\Users\Ralph\3D Objects\Human Pixar Woman\HumanFemale.usd' took 53.7 ms
-
-Blender quit
+##        Blender quit
 
 import argparse
 import bpy
