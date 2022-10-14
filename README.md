@@ -53,3 +53,8 @@ Read prefs: C:\Users\Ralph\AppData\Roaming\Blender Foundation\Blender\3.3\config
 USD import of 'C:\Users\Ralph\3D Objects\Human Pixar Woman\HumanFemale.usd' took 53.7 ms
 Blender quit
 ```
+
+# Step-by-Step 
+
+1. Download examples of USD files from: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
+
