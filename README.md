@@ -54,7 +54,23 @@ USD import of 'C:\Users\Ralph\3D Objects\Human Pixar Woman\HumanFemale.usd' took
 Blender quit
 ```
 
-# Step-by-Step 
+# Step-by-Step Tutorial 
 
-1. Download examples of USD files from: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
+How to use this tool to convert a USD file into STL format
+
+### 1. Download examples of USD files from: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
+
+![](./images//Pixars_USD_Kitchen.gif)
+
+In the example above, `kitchen_set.zip` is being downloaded to my `C:\Users\Ralph\Downloads` directory.
+
+### 2. Unzip the contents of the `Kitchen_set.zip` file
+
+You should see a directory structure that looks like this:
+
+![](./images//KitchenUnzipped.png)
+
+
+
+
 
