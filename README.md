@@ -54,7 +54,7 @@ USD import of 'C:\Users\Ralph\3D Objects\Human Pixar Woman\HumanFemale.usd' took
 Blender quit
 ```
 
-# Step-by-Step Tutorial 
+# Step-by-Step Tutorial _(work in progress)_
 
 This tutorial will show you how to use this tool to convert a USD file into STL format
 
