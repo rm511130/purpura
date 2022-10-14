@@ -3,7 +3,6 @@ Blender Python Script for converting a USD file into STL format
 
 ## 14 OCT 2022 - Proof of Concept Code by rmeira@physna.com
 - Property of Physna
-- Purpura Project
 
 ## Combined purposes:
    1. Convert single USD file into STL
