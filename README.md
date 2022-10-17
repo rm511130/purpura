@@ -101,8 +101,19 @@ In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\
 
 ![](./images/mkdir-stl.gif)
 
+### 6. Execute the USD to STL conversion process
+   
+In this example, we are going to convert `C:\Users\Ralph\3D Objects\Kitchen from Pixar\Kitchen_set.usd` to STL format.
+   
+Inside a PowerShell window, execute the following command as shown in the animated example shown below:
+   
+```
+blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
+```
 
-
+![](./images/conversion.gif)
+   
+   
 
 
 
