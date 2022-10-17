@@ -55,7 +55,7 @@ Python Script = "C:\Users\Ralph\Python\usd2stl.py"
        - Directories referred to in "-i", "-o" and "-s" must already exist
        - Note the need for double backslashes when passing parameters to the Python code
  
-## The output of the conversion process in your PowerShell Console should look something like this:
+## Output logs example on PowerShell Console:
 
 ```       
 Blender 3.3.1 (hash b292cfe5a936 built 2022-10-05 00:49:25)
