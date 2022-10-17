@@ -86,7 +86,8 @@ When opening the `Kitchen_set.zip` file, you will see a directory structure that
 
 ![](./images//KitchenUnzipped.png)
 
-Take these files and place them in a directory of your choice. In this tutorial we will place the files under `C:\Users\Ralph\3D Objects\Kitchen from Pixar` per the example shown below:
+- Take these files and place them in a directory of your choice. 
+- For this tutorial, we will place the files under `C:\Users\Ralph\3D Objects\Kitchen from Pixar` per the example shown below:
 
 ![](./images/Source-Directory.png)
 
