@@ -72,7 +72,9 @@ This tutorial will show you how to use this tool to convert a USD file into STL 
 
 You can find Blender for PCs, MacOs and Linux machines at: https://www.blender.org/download/
 
-### 2. Download examples of USD files from: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
+### 2. Download examples of USD files 
+
+- A good source of USD files can be found here: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
 
 ![](./images//Pixars_USD_Kitchen.gif)
 
