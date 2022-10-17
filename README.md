@@ -20,7 +20,7 @@ blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s 
      - typically output one STL per object found in the <sample.usd> file. 
      - append .stl to the object names it finds in the <sample.usd> file. 
      - also export the union of all the .stl files as a <single.stl> file.
-- The <sample.usd> and <single.stl> placeholders correspond to file-path and file-name.
+- The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
 - The <output-directory> placeholder corresponds to a file-path of an existing directory.
  
 ## How to execute:
@@ -80,13 +80,13 @@ You can find Blender for PCs, MacOs and Linux machines at: https://www.blender.o
 
 In the example above, `kitchen_set.zip` is being downloaded to my `C:\Users\Ralph\Downloads` directory.
 
-### 3. Unzip the contents of the `Kitchen_set.zip` file and place them in a directory of your choosing:
+### 3. Unzip the contents of the `Kitchen_set.zip` file and place them in a directory of your choice:
 
-When openning the `Kitchen_set.zip` file, you will see a directory structure that looks like this:
+When opening the `Kitchen_set.zip` file, you will see a directory structure that looks like this:
 
 ![](./images//KitchenUnzipped.png)
 
-Take these files and place them in a directory of your choosing. In this tutorial we will place the files under `C:\Users\Ralph\3D Objects\Kitchen from Pixar` per the example shown below:
+Take these files and place them in a directory of your choice. In this tutorial we will place the files under `C:\Users\Ralph\3D Objects\Kitchen from Pixar` per the example shown below:
 
 ![](./images/Source-Directory.png)
 
@@ -96,7 +96,7 @@ Right-click on [`usd2stl.py`](https://github.com/rm511130/usd2stl/blob/main/usd2
 
 ### 5. Create an output directory for STL files
 
-In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I openned up a PowerShell window and executed the following commands:
+In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I opened up a PowerShell window and executed the following commands:
 
 ![](./images/mkdir-stl.gif)
 
@@ -112,7 +112,7 @@ blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s 
 
 ![](./images/conversion.gif)
    
-Note: the command used in the animation above is a one-liner, i.e. it's a single, long one line command. We broke and entered the command in several parts for ease of comprehension by using the backtick symbol "`".  The multi-line and one-line versions of the command can be seen below:
+Note: the command used in the animation above is a one-liner, i.e., it's a single, long one line command. We broke and entered the command in sections for ease of comprehension by using the backtick symbol "`".  The multi-line and one-line versions of the command are shown below:
 
 ```
 PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- `
@@ -130,7 +130,9 @@ PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Use
 - Windows comes with a native 3D Viewer, so we need only double-click on any of the STL files created above to visualize them.
 - Let's open the `Kitchen_set.stl` file - the largest file that corresponds to the `kitchen_set.usd` file - and the let's some of its sub-component files. As shown in the animation below: 
 
-
+![](./images/Converted-Files.gif)
+   
+   
 
 
 
