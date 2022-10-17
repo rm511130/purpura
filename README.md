@@ -1,5 +1,5 @@
 # usd2stl
-- (Headless) Blender Python Script for converting a [USD files](https://graphics.pixar.com/usd/release/usdfaq.html) into STL format
+- Python Script for converting a [USD files](https://graphics.pixar.com/usd/release/usdfaq.html) into STL format
 
 ## Combined purposes:
    1. Convert a single USD file into a single STL
