@@ -93,7 +93,7 @@ When opening the `Kitchen_set.zip` file, you will see a directory structure that
 
 ### 4. Download `usd2stl.py` from this repository
 
-Right-click on [`usd2stl.py`](https://github.com/rm511130/usd2stl/blob/main/usd2stl.py) and use `save-link-as` to place it in a directory of your choosing. In this example I'm placing it here: `C:\Users\Ralph\Python\usd2stl.py`
+Right-click on [`usd2stl.py`](https://github.com/rm511130/usd2stl/blob/main/usd2stl.py) and use `save-link-as` to place it in a directory of your choice. In this example, we are placing it here: `C:\Users\Ralph\Python\usd2stl.py`
 
 ### 5. Create an output directory for STL files
 
