@@ -91,7 +91,15 @@ Take these files and place them in a directory of your choosing. In this tutoria
 
 ![](./images/Source-Directory.png)
 
-### 4. Download `usd2stl.py` from this repository
+### 4. Download [`usd2stl.py`](https://github.com/rm511130/usd2stl/blob/main/usd2stl.py) from this repository
+
+Place `usd2stl.py` in a directory of your choosing. In this example I'm placing it here: `C:\Users\Ralph\Python\usd2stl.py`
+
+### 5. Create an output directory for STL files
+
+In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I openned up a PowerShell window and executed the following command:
+
+
 
 
 
