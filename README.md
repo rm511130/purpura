@@ -96,7 +96,7 @@ Right-click on [`usd2stl.py`](https://github.com/rm511130/usd2stl/blob/main/usd2
 
 ### 5. Create an output directory for STL files
 
-In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I openned up a PowerShell window and executed the following command:
+In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I openned up a PowerShell window and executed the following commands:
 
 ![](./images/mkdir-stl.gif)
 
