@@ -99,6 +99,8 @@ Place `usd2stl.py` in a directory of your choosing. In this example I'm placing 
 
 In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I openned up a PowerShell window and executed the following command:
 
+![](./images/mkdir-stl.gif)
+
 
 
 
