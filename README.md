@@ -4,7 +4,7 @@
    1. Converts a single USD file into a single STL
    2. Converts all subcomponents of a USD file into STLs
 
-## Requires: 
+## Requirements: 
    - [Blender 3.3 or later](https://www.blender.org/download/)
    - Code will be executed as headless / background service
    - Windows OS (MacOS will follow soon)
