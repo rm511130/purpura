@@ -128,6 +128,8 @@ PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Use
 PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- -i "C:\\Users\\Ralph\\3D Objects\\Kitchen from Pixar\\Kitchen_set.usd" -o "C:\\Users\\Ralph\\3D Objects\\Kitchen from Pixar\\STL" -s "C:\\Users\\Ralph\\3D Objects\\Kitchen from Pixar\\STL\\Kitchen_set.stl"
 ```
    
+Note: It's **very important** to use double-backslashes when passing parameter values to the Python Script per the examples shown above.
+
 ### 7. Reviewing the results
 
 - Windows comes with a native 3D Viewer, so we need only double-click on any of the STL files created above to visualize them.
