@@ -71,19 +71,29 @@ Blender quit
 
 This tutorial will show you how to use this tool to convert a USD file into STL format
 
-### 1. Download examples of USD files from: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
+### 1. Make sure you have Blender 3.3 or later installed on your machine.
+
+You can find Blender for PCs, MacOs and Linux machines at: https://www.blender.org/download/
+
+### 2. Download examples of USD files from: https://graphics.pixar.com/usd/release/dl_downloads.html#assets
 
 ![](./images//Pixars_USD_Kitchen.gif)
 
 In the example above, `kitchen_set.zip` is being downloaded to my `C:\Users\Ralph\Downloads` directory.
 
-### 2. Unzip the contents of the `Kitchen_set.zip` file and place them in a directory of your choosing:
+### 3. Unzip the contents of the `Kitchen_set.zip` file and place them in a directory of your choosing:
 
 When openning the `Kitchen_set.zip` file, you will see a directory structure that looks like this:
 
 ![](./images//KitchenUnzipped.png)
 
-Take these files and place them in a directory of your choosing. In this tutorial we will place the files under `C:\Users\Ralph\3D Objects\Kitchen from Pixar`
+Take these files and place them in a directory of your choosing. In this tutorial we will place the files under `C:\Users\Ralph\3D Objects\Kitchen from Pixar` per the example shown below:
+
+![](./images/Source-Directory.png)
+
+### 4. Download `usd2stl.py` from this repository
+
+
 
 
 
