@@ -1,7 +1,5 @@
 # usd2stl
 - Python Script for converting a [USD files](https://graphics.pixar.com/usd/release/usdfaq.html) into STL format
-
-## Combined purposes:
    1. Convert a single USD file into a single STL
    2. Convert all subcomponents of a USD file into STLs
 
