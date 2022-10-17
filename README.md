@@ -129,7 +129,7 @@ PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Use
 ### 7. Reviewing the results
 
 - Windows comes with a native 3D Viewer, so we need only double-click on any of the STL files created above to visualize them.
-- Let's open the `Kitchen_set.stl` file - the largest file that corresponds to the `kitchen_set.usd` file - and the let's some of its sub-component files. As shown in the animation below: 
+- Let's open the `Kitchen_set.stl` file - the largest file that corresponds to the `kitchen_set.usd` file - and then let's some of its sub-component files. As shown in the animation below: 
 
 ![](./images/Converted-Files.gif)
    
