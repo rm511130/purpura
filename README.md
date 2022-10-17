@@ -113,7 +113,7 @@ blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s 
 
 ![](./images/conversion.gif)
    
-Note: the command used in the animation above is a one-liner, i.e., it's a single, long one line command. We broke and entered the command in sections for ease of comprehension by using the backtick symbol "`".  The multi-line and one-line versions of the command are shown below:
+Note: the command used in the animation above is a one-liner, i.e., it's a lon, single, one line command. We broke the command and entered it in sections for ease of comprehension, by using the backtick symbol "`".  The multi-line and one-line versions of the command are shown below:
 
 ```
 PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- `
