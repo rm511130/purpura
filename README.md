@@ -1,17 +1,30 @@
 # usd2stl
-(Headless) Blender Python Script for converting a USD file into STL format
-
-## 14 OCT 2022 - Proof of Concept Code by rmeira@physna.com
-- Property of Physna
+- (Headless) Blender Python Script for converting a [USD file](https://graphics.pixar.com/usd/release/usdfaq.html) into STL format
+- Proof of Concept Code by rmeira@physna.com
+- 10/14/2022
 
 ## Combined purposes:
-   1. Convert single USD file into STL
-   2. Convert all subcomponents of USD file into STLs
+   1. Convert a single USD file into STL
+   2. Convert all subcomponents of a USD file into STLs
 
 ## Requires: 
-   - Blender 3.3 or later
+   - [Blender 3.3 or later](https://www.blender.org/download/)
    - Code will be executed as headless / background service
-   - Windows OS (for the time being)
+   - Windows OS (MacOS will follow soon)
+
+## Command Syntax:
+
+```
+blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
+```
+
+- The <sample.usd> file is typically made up of many objects with 3D meshes. 
+- The usd2stl.py script will:
+     - typically output one STL per object found in the <sample.usd> file. 
+     - append .stl to the object names it finds in the <sample.usd> file. 
+     - also export the union of all the .stl files as a <single.stl> file.
+- The <sample.usd> and <single.stl> placeholders correspond to file-path and file-name.
+- The <output-directory> placeholder corresponds to a file-path of an existing directory.
  
 ## How to execute:
 
