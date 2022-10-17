@@ -95,6 +95,8 @@ When opening the `Kitchen_set.zip` file, you will see a directory structure that
 
 Download the following Python Script [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing) and place it in a directory of your choice. In this example, we are placing it here: `C:\Users\Ralph\Python\usd2stl.py`
 
+![](./images/Step4.gif)
+
 ### 5. Create an output directory for STL files
 
 In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I opened up a PowerShell window and executed the following commands:
