@@ -99,6 +99,7 @@ Download the following Python Script [`usd2stl.py`](https://drive.google.com/fil
 
 ### 5. Create an output directory for STL files
 
+This is a simple but important step in the process. If an output directory does not exist, the Python code won't be able to write the STL files and will fail.
 In this example, I'm going to use `C:\Users\Ralph\3D Objects\Kitchen from Pixar\STL` so I opened up a PowerShell window and executed the following commands:
 
 ![](./images/mkdir-stl.gif)
