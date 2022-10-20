@@ -68,7 +68,8 @@ viewlayer = context.view_layer
 bpy.ops.object.select_by_type(extend=False, type='MESH') 
 bpy.ops.export_scene.gltf(
         filepath=args.single,
-        check_existing=False, export_format="GLB", ui_tab="GENERAL")
+        check_existing=False, export_format="GLB", ui_tab="GENERAL",
+        export_yup=False)
   
 obs = [o for o in scene.objects if o.type == 'MESH']
 bpy.ops.object.select_all(action='DESELECT')    
@@ -81,5 +82,6 @@ for ob in obs:
     bpy.ops.export_scene.gltf(
             filepath=str(glb_path),
             check_existing=False, export_format="GLB", ui_tab="GENERAL",
-            use_selection=True)
+            use_selection=True,
+            export_yup=False)
     ob.select_set(False)
