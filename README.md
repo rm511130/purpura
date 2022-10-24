@@ -55,12 +55,30 @@ C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\R
        - Directories referred to in "-i", "-o" and "-s" must already exist
        - Note the need for double backslashes when passing parameters to the Python code
 
+### Output Example: Windows Machine
+
+```
+Blender 3.3.1 (hash b292cfe5a936 built 2022-10-04 23:43:02)
+USD import of '/Users/rmeira/Downloads/PZ2.usd' took 21.1 ms
+
+Blender quit       
+```
+
 ### b. MacOS Terminal Example:
 
 ```
 MacOS> cd /Applications/Blender.app/Contents/MacOS
 MacOS> mkdir -p ~/Downloads/output
 MacOS> ./blender -b -P ~/Downloads/usd2stl.py -- -i ~/Downloads/PZ2.usd -o ~/Downloads/output -s ~/Downloads/output/PZ2.stl
+```
+
+### Output Example: MacOS
+
+```
+Blender 3.3.1 (hash b292cfe5a936 built 2022-10-04 23:43:02)
+USD import of '/Users/rmeira/Downloads/PZ2.usd' took 21.1 ms
+
+Blender quit
 ```
 
 ### Where:
@@ -86,16 +104,6 @@ Python Script = ~/Downloads/usd2stl.py
 ### Notes:
        - Directories referred to in "-i", "-o" and "-s" must already exist
        - `~` corresponds to your home directory under which is found the `Downloads` directory
- 
-## Output logs example on Windows PowerShell Console:
-
-```       
-Blender 3.3.1 (hash b292cfe5a936 built 2022-10-05 00:49:25)
-Read prefs: C:\Users\Ralph\AppData\Roaming\Blender Foundation\Blender\3.3\config\userpref.blend
-USD import of 'C:\Users\Ralph\Downloads\PZ2.usd' took 11.6 ms
-
-Blender quit
-```
 
 # Step-by-Step Tutorial
 
