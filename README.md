@@ -6,11 +6,11 @@
 
 ## TL;DR
 
-   1. Complete the requirements using default directories
-   2. Skip to the [How-To](#how-to) section,and Cut & Paste & Execute the commands using Windows PowerShell or a Mac Terminal Window 
-   3. Check for the results under the `Downloads\output` directory
+   1. Complete the [requirements](#requirements) using default directories.  
+   2. Skip to the [How-To](#how-to) section. Cut & Paste & Execute the commands using Windows PowerShell or a Mac Terminal Window.  
+   3. Check for the results under the `Downloads\output` directory.  
 
-## Requirements: 
+## Requirements: <a name="requirements"></a>
    - [Blender 3.3 or later](https://www.blender.org/download/) installed on your machine
    - Download [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing)
    - Download [`PZ2.usd`](https://drive.google.com/file/d/1fJyewo1JMThtBwSZkCKmwBoyg-MuD1mp/view?usp=sharing) in case you wish to test the procedure and don't have your own `.usd` file
