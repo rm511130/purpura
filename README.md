@@ -10,8 +10,7 @@
    - [`HumanFemale.usd`](https://drive.google.com/file/d/1eoi-hSWvX0S1SQqdUvKhBvcYfuvhKTGD/view?usp=sharing) if you wish to test the procedure and don't have your own `.usd` file
    - Windows OS (access to [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2#where-do-i-find-powershell)) or MacOS (access to [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
    
-
-_Note: The Python Code will be executed as headless / background service
+_Note: The Python Code will be executed as headless / background service_
 
 ## Command Syntax:
 
@@ -24,14 +23,6 @@ cd "C:\Program Files\Blender Foundation\Blender 3.3"
 .\blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
 ```
 
-- The <sample.usd> file is typically made up of many objects with 3D meshes. 
-- The [usd2stl.py](https://github.com/rm511130/usd2stl/blob/main/usd2stl.py) script will:
-     - typically output one STL per object found in the <sample.usd> file. 
-     - append .stl to the object names it finds in the <sample.usd> file. 
-     - also export the union of all the .stl files as a <single.stl> file.
-- The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
-- The \<output-directory\> placeholder corresponds to a file-path of an existing directory.
-
 ### b. MacOS Machines
 
 ```
@@ -39,45 +30,61 @@ cd /Applications/Blender.app/Contents/MacOS
 ./blender -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
 ```
 
-- The <sample.usd> file is typically made up of many objects with 3D meshes. 
-- The [usd2stl.py](https://github.com/rm511130/usd2stl/blob/main/usd2stl.py) script will:
-     - typically output one STL per object found in the <sample.usd> file. 
+### In both cases: Windows and MacOs
+```
+- The <sample.usd> is the file to be converted to STL. 
+- The usd2stl.py script will:
+     - output one STL per object found in the <sample.usd> file. 
      - append .stl to the object names it finds in the <sample.usd> file. 
-     - also export the union of all the .stl files as a <single.stl> file.
+     - export the union of all the .stl files as a <single.stl> file.
 - The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
-- The \<output-directory\> placeholder corresponds to a file-path of an existing directory.
+- The <output-directory> placeholder corresponds to a file-path of an existing directory.
+```
 
 ## How to execute:
 
-### PowerShell Example:
+### a. Windonws PowerShell Example:
 
 ```
 C:> cd "C:\Program Files\Blender Foundation\Blender 3.3"
 C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- -i "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.usd" -o "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\output" -s "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.stl"
 ```
+
+### Notes:
+       - Directories referred to in "-i", "-o" and "-s" must already exist
+       - Note the need for double backslashes when passing parameters to the Python code
+
+### b. MacOS Terminal Example:
+
+```
+MacOS> cd /Applications/Blender.app/Contents/MacOS
+MacOS> mkdir -p ~/Downloads/output
+MacOS> ./blender -b -P ~/Downloads/usd2stl.py -- -i ~/Downloads/HumanFemale.usd -o ~/Downloads/output -s ~/Downloads/output/HumanFemale.stl
+```
+
 ### Where:
 ```
 -b = background or headless
 
 -P = Python
 
-Python Script = "C:\Users\Ralph\Python\usd2stl.py" 
+Python Script = ~/Downloads/usd2stl.py 
 
 -- = subsequent parameters are inputs for the Python code
 
 -i = input USD file name and location
-     Example of USD file name and location = "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.usd" 
+     Example of USD file name and location = ~/Downloads/HumanFemale.usd
 
 -o = output directory where all USD subcomponents will be saved as STL files
-     Example of output directory: "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\output" 
+     Example of output directory: ~/Downloads/output
 
 -s = file name and location of single STL file conversion from USD file
-     Example of Single STL file name and location: "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.stl"
+     Example of Single STL file name and location: ~/Downloads/output/HumanFemale.stl
 ```
 
 ### Notes:
        - Directories referred to in "-i", "-o" and "-s" must already exist
-       - Note the need for double backslashes when passing parameters to the Python code
+       - `~` corresponds to your home directory under which is found the `Downloads` directory
  
 ## Output logs example on PowerShell Console:
 
