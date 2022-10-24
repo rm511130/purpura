@@ -4,6 +4,12 @@
    1. Converts a single USD file into a single STL
    2. Converts all subcomponents of a USD file into STLs
 
+## TL;DR
+
+   1. Complete the requirements using default directories
+   2. Skip to the [How-To](#how-to) section,and Cut & Paste & Execute the commands using Windows PowerShell or a Mac Terminal Window 
+   3. Check for the results under the `Downloads\output` directory
+
 ## Requirements: 
    - [Blender 3.3 or later](https://www.blender.org/download/) installed on your machine
    - Download [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing)
@@ -41,7 +47,7 @@ cd /Applications/Blender.app/Contents/MacOS
 - The <output-directory> placeholder corresponds to a file-path of an existing directory.
 ```
 
-## How to execute:
+## How to execute: <a name="how-to"></a>
 
 ### a. Windonws PowerShell Example:
 
