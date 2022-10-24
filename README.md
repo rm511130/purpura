@@ -13,7 +13,7 @@
 
 Assuming that you have Blender version 3.3 installed on your machine.
 
-### Windows Machines
+### a. Windows Machines
 
 ```
 cd "C:\Program Files\Blender Foundation\Blender 3.3"
@@ -28,7 +28,7 @@ cd "C:\Program Files\Blender Foundation\Blender 3.3"
 - The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
 - The <output-directory> placeholder corresponds to a file-path of an existing directory.
 
-### MacOS Machines
+### b. MacOS Machines
 
 ```
 cd /Applications/Blender.app/Contents/MacOS
