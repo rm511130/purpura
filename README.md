@@ -5,9 +5,13 @@
    2. Converts all subcomponents of a USD file into STLs
 
 ## Requirements: 
-   - [Blender 3.3 or later](https://www.blender.org/download/)
-   - The Python Code will be executed as headless / background service
-   - Windows OS (MacOS will follow soon)
+   - [Blender 3.3 or later](https://www.blender.org/download/) installed on your machine
+   - [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing)
+   - [`HumanFemale.usd`](https://drive.google.com/file/d/1eoi-hSWvX0S1SQqdUvKhBvcYfuvhKTGD/view?usp=sharing) if you wish to test the procedure and don't have your own `.usd` file
+   - Windows OS (access to [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2#where-do-i-find-powershell)) or MacOS (access to [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
+   
+
+_Note: The Python Code will be executed as headless / background service
 
 ## Command Syntax:
 
