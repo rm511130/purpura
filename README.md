@@ -26,7 +26,7 @@ cd "C:\Program Files\Blender Foundation\Blender 3.3"
      - append .stl to the object names it finds in the <sample.usd> file. 
      - also export the union of all the .stl files as a <single.stl> file.
 - The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
-- The <output-directory> placeholder corresponds to a file-path of an existing directory.
+- The \<output-directory\> placeholder corresponds to a file-path of an existing directory.
 
 ### b. MacOS Machines
 
@@ -41,7 +41,7 @@ cd /Applications/Blender.app/Contents/MacOS
      - append .stl to the object names it finds in the <sample.usd> file. 
      - also export the union of all the .stl files as a <single.stl> file.
 - The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
-- The <output-directory> placeholder corresponds to a file-path of an existing directory.
+- The \<output-directory\> placeholder corresponds to a file-path of an existing directory.
 
 ## How to execute:
 
