@@ -11,8 +11,13 @@
 
 ## Command Syntax:
 
+Assuming that you have Blender version 3.3 installed on your machine.
+
+### Windows Machines
+
 ```
-blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
+cd "C:\Program Files\Blender Foundation\Blender 3.3"
+.\blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
 ```
 
 - The <sample.usd> file is typically made up of many objects with 3D meshes. 
@@ -22,7 +27,22 @@ blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s 
      - also export the union of all the .stl files as a <single.stl> file.
 - The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
 - The <output-directory> placeholder corresponds to a file-path of an existing directory.
- 
+
+### MacOS Machines
+
+```
+cd /Applications/Blender.app/Contents/MacOS
+./blender -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
+```
+
+- The <sample.usd> file is typically made up of many objects with 3D meshes. 
+- The [usd2stl.py](https://github.com/rm511130/usd2stl/blob/main/usd2stl.py) script will:
+     - typically output one STL per object found in the <sample.usd> file. 
+     - append .stl to the object names it finds in the <sample.usd> file. 
+     - also export the union of all the .stl files as a <single.stl> file.
+- The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
+- The <output-directory> placeholder corresponds to a file-path of an existing directory.
+
 ## How to execute:
 
 ### PowerShell Example:
