@@ -46,9 +46,9 @@ cd /Applications/Blender.app/Contents/MacOS
 ### a. Windonws PowerShell Example:
 
 ```
-C:> cd "C:\Program Files\Blender Foundation\Blender 3.3"
-C:> mkdir ~\Downloads\output
-C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\Ralph\Downloads\usd2stl.py" -- -i "C:\\Users\\Ralph\\Downloads\\PZ2.usd" -o "C:\\Users\Ralph\\Downloads\\output" -s "C:\\Users\\Ralph\\Downloads\\output\\PZ2.stl"
+cd "C:\Program Files\Blender Foundation\Blender 3.3"
+mkdir ~\Downloads\output
+.\blender.exe -b -P "C:\Users\Ralph\Downloads\usd2stl.py" -- -i "C:\\Users\\Ralph\\Downloads\\PZ2.usd" -o "C:\\Users\Ralph\\Downloads\\output" -s "C:\\Users\\Ralph\\Downloads\\output\\PZ2.stl"
 ```
 
 ### Notes:
@@ -67,9 +67,9 @@ Blender quit
 ### b. MacOS Terminal Example:
 
 ```
-MacOS> cd /Applications/Blender.app/Contents/MacOS
-MacOS> mkdir -p ~/Downloads/output
-MacOS> ./blender -b -P ~/Downloads/usd2stl.py -- -i ~/Downloads/PZ2.usd -o ~/Downloads/output -s ~/Downloads/output/PZ2.stl
+cd /Applications/Blender.app/Contents/MacOS
+mkdir -p ~/Downloads/output
+./blender -b -P ~/Downloads/usd2stl.py -- -i ~/Downloads/PZ2.usd -o ~/Downloads/output -s ~/Downloads/output/PZ2.stl
 ```
 
 ### Output Example: MacOS
