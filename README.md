@@ -7,7 +7,7 @@
 ## Requirements: 
    - [Blender 3.3 or later](https://www.blender.org/download/) installed on your machine
    - [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing)
-   - [`HumanFemale.usd`](https://drive.google.com/file/d/1eoi-hSWvX0S1SQqdUvKhBvcYfuvhKTGD/view?usp=sharing) if you wish to test the procedure and don't have your own `.usd` file
+   - [`Kitchen_set.usd`](https://drive.google.com/file/d/1qMyqC1SdJDllZWMArngrReVJ6uEp29Jr/view?usp=sharing) if you wish to test the procedure and don't have your own `.usd` file
    - Windows OS (access to [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2#where-do-i-find-powershell)) or MacOS (access to [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
    
 _Note: The Python Code will be executed as headless / background service_
@@ -47,7 +47,8 @@ cd /Applications/Blender.app/Contents/MacOS
 
 ```
 C:> cd "C:\Program Files\Blender Foundation\Blender 3.3"
-C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- -i "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.usd" -o "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\output" -s "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.stl"
+C:> mkdir ~\Downloads\output
+C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "~\Downloads\usd2stl.py" -- -i "~\\Downloads\\Kitchen_set.usd" -o "~\\Downloads\\output" -s "~\\Downloads\\output\\Kitchen_set.stl"
 ```
 
 ### Notes:
@@ -59,7 +60,7 @@ C:\Program Files\Blender Foundation\Blender 3.3> .\blender.exe -b -P "C:\Users\R
 ```
 MacOS> cd /Applications/Blender.app/Contents/MacOS
 MacOS> mkdir -p ~/Downloads/output
-MacOS> ./blender -b -P ~/Downloads/usd2stl.py -- -i ~/Downloads/HumanFemale.usd -o ~/Downloads/output -s ~/Downloads/output/HumanFemale.stl
+MacOS> ./blender -b -P ~/Downloads/usd2stl.py -- -i ~/Downloads/Kitchen_set.usd -o ~/Downloads/output -s ~/Downloads/output/Kitchen_set.stl
 ```
 
 ### Where:
@@ -73,13 +74,13 @@ Python Script = ~/Downloads/usd2stl.py
 -- = subsequent parameters are inputs for the Python code
 
 -i = input USD file name and location
-     Example of USD file name and location = ~/Downloads/HumanFemale.usd
+     Example of USD file name and location = ~/Downloads/Kitchen_set.usd
 
 -o = output directory where all USD subcomponents will be saved as STL files
      Example of output directory: ~/Downloads/output
 
 -s = file name and location of single STL file conversion from USD file
-     Example of Single STL file name and location: ~/Downloads/output/HumanFemale.stl
+     Example of Single STL file name and location: ~/Downloads/output/Kitchen_set.stl
 ```
 
 ### Notes:
