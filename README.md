@@ -110,6 +110,11 @@ Python Script = ~/Downloads/usd2stl.py
 ### Notes:
        - Directories referred to in "-i", "-o" and "-s" must already exist
        - `~` corresponds to your home directory under which is found the `Downloads` directory
+       
+### Results
+
+- Check under the `output` directory created under your default `Downloads` folder
+- You should see a 3D Model of a Puzzle `PZ2.stl` and six Puzzle Pieces in STL format
 
 # Step-by-Step Tutorial
 
