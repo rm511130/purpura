@@ -1,10 +1,10 @@
 # usd2stl
-- Python Script for converting a [USD files](https://graphics.pixar.com/usd/release/usdfaq.html) into [STL format](https://en.wikipedia.org/wiki/STL_(file_format))
+- Python Script for converting [USD files](https://graphics.pixar.com/usd/release/usdfaq.html) into [STL format](https://en.wikipedia.org/wiki/STL_(file_format))
 
    1. Converts a single USD file into a single STL
    2. Converts all subcomponents of a USD file into STLs
 
-## TL;DR
+## TL; DR
 
    1. Complete the [requirements](#requirements) using default directories.  
    2. Skip to the [How-To](#how-to) section. Cut & Paste & Execute the commands using Windows PowerShell or a Mac Terminal Window.  
@@ -13,14 +13,16 @@
 ## Requirements: <a name="requirements"></a>
    - [Blender 3.3 or later](https://www.blender.org/download/) installed on your machine
    - Download [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing)
-   - Download [`PZ2.usd`](https://drive.google.com/file/d/1fJyewo1JMThtBwSZkCKmwBoyg-MuD1mp/view?usp=sharing) in case you wish to test the procedure and don't have your own `.usd` file
+   - Download [`PZ2.usd`](https://drive.google.com/file/d/1fJyewo1JMThtBwSZkCKmwBoyg-MuD1mp/view?usp=sharing). It's a sample `usd` file.
    - Windows OS (access to [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2#where-do-i-find-powershell)) or MacOS (access to [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
    
 _Note: The Python Code will be executed as headless / background service_
 
 ## Command Syntax:
 
-Assuming that you have Blender version 3.3 installed on your machine.
+- This section covers the _**command syntax**_.  
+- Assumption: you have Blender version 3.3 installed on your machine.  
+- Skip to the [_**How-To**_](#how-to) section if you would like to see a working example.  
 
 ### a. Windows Machines
 
@@ -36,7 +38,7 @@ cd /Applications/Blender.app/Contents/MacOS
 ./blender -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
 ```
 
-### In both cases: Windows and MacOs
+### In both cases: Windows and MacOS
 ```
 - The <sample.usd> is the file to be converted to STL. 
 - The usd2stl.py script will:
@@ -49,7 +51,7 @@ cd /Applications/Blender.app/Contents/MacOS
 
 ## How to execute: <a name="how-to"></a>
 
-### a. Windonws PowerShell Example:
+### a. Windows PowerShell Example:
 
 ```
 cd "C:\Program Files\Blender Foundation\Blender 3.3"
@@ -116,13 +118,15 @@ Python Script = ~/Downloads/usd2stl.py
 - Check under the `output` directory created under your default `Downloads` folder
 - You should see a 3D Model of a Puzzle `PZ2.stl` and six Puzzle Pieces in STL format
 
-# Step-by-Step Tutorial
+---
+# Windows PC Step-by-Step Tutorial
 
-This tutorial will show you how to use this tool to convert a USD file into STL format
+- This tutorial will show you how to use this tool to convert a USD file into STL format. 
+- It is specific for a Windows PC.
 
 ### 1. Make sure you have Blender 3.3 or later installed on your machine.
 
-You can find Blender for PCs, MacOs and Linux machines at: https://www.blender.org/download/
+You can find Blender for PCs, MacOS and Linux machines at: https://www.blender.org/download/
 
 ### 2. Download examples of USD files 
 
@@ -160,15 +164,11 @@ Download the following Python Script [`usd2stl.py`](https://drive.google.com/fil
    
 In this example, we are going to convert `C:\Users\Ralph\3D Objects\Kitchen from Pixar\Kitchen_set.usd` to STL format.
    
-Inside a PowerShell window, execute the following command as shown in the animated example shown below:
-   
-```
-blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
-```
+Inside a PowerShell window, execute the command shown in the animated example below. 
 
-![](./images/conversion.gif)
-   
-Note: the command used in the animation above is a one-liner, i.e., it's a long, single, one line command. We broke the command and entered it in sections for ease of comprehension, by using the backtick symbol "`".  The multi-line and one-line versions of the command are shown below:
+Note: the command used in the animation is a one-liner, i.e., it's a long, single, one line command. We broke the command and entered it in sections for ease of comprehension, by using the backtick symbol "`".  The multi-line and one-line versions of the command are shown below:
+
+#### Multi-Line
 
 ```
 PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- `
@@ -177,11 +177,16 @@ PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Use
 >> -s "C:\\Users\\Ralph\\3D Objects\\Kitchen from Pixar\\STL\\Kitchen_set.stl"
 ```
 
+#### One-Liner
+
 ```
 PS C:\Program Files\Blender Foundation\Blender 3.3>  .\blender.exe -b -P "C:\Users\Ralph\Python\usd2stl.py" -- -i "C:\\Users\\Ralph\\3D Objects\\Kitchen from Pixar\\Kitchen_set.usd" -o "C:\\Users\\Ralph\\3D Objects\\Kitchen from Pixar\\STL" -s "C:\\Users\\Ralph\\3D Objects\\Kitchen from Pixar\\STL\\Kitchen_set.stl"
 ```
    
 Note: It's **very important** to use double-backslashes when passing parameter values to the Python Script per the examples shown above.
+   
+![](./images/conversion.gif)
+   
 
 ### 7. Reviewing the results
 
