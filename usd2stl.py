@@ -81,3 +81,4 @@ if args.output:
               filepath=str(stl_path),
               use_selection=True)
       ob.select_set(False)
+
