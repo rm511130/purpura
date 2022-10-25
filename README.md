@@ -2,6 +2,16 @@
 
 `./blender -b -P usd2stl.py -- -i <sample.usd> -o <output-directory> -s <sample.stl>`
 
+```
+        -b = background or headless
+        -P = Python
+usd2glb.py = Python Script
+        -- = subsequent parameters are inputs for the Python code
+        -i = input USD file name and location
+        -o = output directory where all USD subcomponents will be saved as STL files
+        -s = file name and location of single STL file conversion from USD file
+```
+
 - Python Script for converting [USD files](https://graphics.pixar.com/usd/release/usdfaq.html) into [STL format](https://en.wikipedia.org/wiki/STL_(file_format))
 
    1. Converts a single USD file into a single STL
