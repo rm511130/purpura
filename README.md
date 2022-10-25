@@ -79,10 +79,10 @@ Python Script = ~/Downloads/usd2stl.py
 -i = input USD file name and location
      Example of USD file name and location = ~/Downloads/PZ2.usd
 
--o = output directory where all USD subcomponents will be saved as STL files
+-o = optional output directory where all USD subcomponents will be saved as STL files
      Example of output directory: ~/Downloads/output
 
--s = file name and location of single STL file conversion from USD file
+-s = optional file name and location of single STL file conversion from USD file
      Example of Single STL file name and location: ~/Downloads/output/PZ2.stl
 ```
 
