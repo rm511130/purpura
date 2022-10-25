@@ -81,5 +81,5 @@ if args.output:
           bpy.ops.export_mesh.stl(
               filepath=str(stl_path),
               use_selection=True)
-      ob.select_set(False)
+          ob.select_set(False)
 
