@@ -1,5 +1,5 @@
-## 14 OCT 2022
-## Proof of Concept Code by rmeira@physna.comusd2stl
+## 25 OCT 2022
+## Proof of Concept Code by rmeira@physna.com
 ##
 ## Combined purpose:
 ##   1. Convert a single USD file into STL
@@ -20,9 +20,9 @@
 ##        -P = Python
 ##        Python code = "C:\Users\Ralph\Python\usd2stl.py" 
 ##        -- = subsequent parameters are inputs for the Python code
-##        -i = input USD file name and location
+##        -i = optional input USD file name and location
 ##        Example of USD file name and location = "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.usd" 
-##        -o = output directory where all USD subcomponents will be saved as STL files
+##        -o = optional output directory where all USD subcomponents will be saved as STL files
 ##        Example of output directory: "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\output" 
 ##        -s = file name and location of single STL file conversion from USD file
 ##        Example of Single STL file name and location: "C:\\Users\\Ralph\\3D Objects\\Human Pixar Woman\\HumanFemale.stl"
@@ -64,19 +64,24 @@ context = bpy.context
 scene = context.scene
 viewlayer = context.view_layer
 
-bpy.ops.object.select_by_type(extend=False, type='MESH') 
-bpy.ops.export_mesh.stl(filepath=args.single, use_selection=True, global_scale=1.0, use_scene_unit=False, ascii=False, use_mesh_modifiers=True, batch_mode="OFF", axis_forward="Y", axis_up="Z")
+if args.single:
+      bpy.ops.object.select_by_type(extend=False, type='MESH') 
+      bpy.ops.export_mesh.stl(
+        filepath=args.single, use_selection=True, 
+        global_scale=1.0, use_scene_unit=False, 
+        ascii=False, use_mesh_modifiers=True, 
+        batch_mode="OFF", axis_forward="Y", axis_up="Z")
 
-obs = [o for o in scene.objects if o.type == 'MESH']
-bpy.ops.object.select_all(action='DESELECT')    
+if args.output:
+      obs = [o for o in scene.objects if o.type == 'MESH']
+      bpy.ops.object.select_all(action='DESELECT')    
 
-path = Path(args.output)
-for ob in obs:
-    viewlayer.objects.active = ob
-    ob.select_set(True)
-    stl_path = path / f"{ob.name}.stl"
-    bpy.ops.export_mesh.stl(
-            filepath=str(stl_path),
-            use_selection=True)
-    ob.select_set(False)
-
+      path = Path(args.output)
+      for ob in obs:
+          viewlayer.objects.active = ob
+          ob.select_set(True)
+          stl_path = path / f"{ob.name}.stl"
+          bpy.ops.export_mesh.stl(
+              filepath=str(stl_path),
+              use_selection=True)
+      ob.select_set(False)
