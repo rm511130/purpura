@@ -79,7 +79,8 @@ if args.output:
           ob.select_set(True)
           stl_path = path / f"{ob.name}.stl"
           bpy.ops.export_mesh.stl(
-              filepath=str(stl_path),
-              use_selection=True)
+                  filepath=str(stl_path),
+                  use_selection=True)
           ob.select_set(False)
+
 
