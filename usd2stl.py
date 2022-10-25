@@ -66,11 +66,7 @@ viewlayer = context.view_layer
 
 if args.single:
       bpy.ops.object.select_by_type(extend=False, type='MESH') 
-      bpy.ops.export_mesh.stl(
-        filepath=args.single, use_selection=True, 
-        global_scale=1.0, use_scene_unit=False, 
-        ascii=False, use_mesh_modifiers=True, 
-        batch_mode="OFF", axis_forward="Y", axis_up="Z")
+      bpy.ops.export_mesh.stl(filepath=args.single, use_selection=True, global_scale=1.0, use_scene_unit=False, ascii=False, use_mesh_modifiers=True, batch_mode="OFF", axis_forward="Y", axis_up="Z")
 
 if args.output:
       obs = [o for o in scene.objects if o.type == 'MESH']
