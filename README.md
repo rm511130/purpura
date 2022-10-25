@@ -7,8 +7,8 @@
         -P = Python
 usd2glb.py = Python Script
         -- = subsequent parameters are inputs for the Python code
-        -i = input USD file name and location
-        -o = output directory where all USD subcomponents will be saved as STL files
+        -i = optional input USD file name and location
+        -o = optional output directory where all USD subcomponents will be saved as STL files
         -s = file name and location of single STL file conversion from USD file
 ```
 
@@ -21,7 +21,7 @@ usd2glb.py = Python Script
    - [Blender 3.3 or later](https://www.blender.org/download/) installed on your machine
    - Download [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing)
    - Download [`PZ2.usd`](https://drive.google.com/file/d/1fJyewo1JMThtBwSZkCKmwBoyg-MuD1mp/view?usp=sharing). It's a sample `usd` file.
-   - Windows OS (access to [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2#where-do-i-find-powershell)) or MacOS (access to [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
+   - Windows OS (access to [PowerShell ISE](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2#where-do-i-find-powershell)) or MacOS (access to [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
    
 _Note: The Python Code will be executed as headless / background service_
 
@@ -38,6 +38,7 @@ mkdir ~\Downloads\output
 ### Notes:
        - Directories referred to in "-i", "-o" and "-s" must already exist
        - Note the need for double backslashes when passing parameters to the Python code
+       - Please substitute my \Users\Ralph directory with yours
 
 ### Output Example: Windows Machine
 
