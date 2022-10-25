@@ -4,12 +4,6 @@
    1. Converts a single USD file into a single STL
    2. Converts all subcomponents of a USD file into STLs
 
-## TL; DR
-
-   1. Complete the [requirements](#requirements) using default directories.  
-   2. Skip to the [How-To](#how-to) section. Cut & Paste & Execute the commands using Windows PowerShell or a Mac Terminal Window.  
-   3. Check for the results under the `Downloads\output` directory.  
-
 ## Requirements: <a name="requirements"></a>
    - [Blender 3.3 or later](https://www.blender.org/download/) installed on your machine
    - Download [`usd2stl.py`](https://drive.google.com/file/d/1fQ86X2rZ2DFZ3mFaEIMTWU-M9-b2ZQTK/view?usp=sharing)
@@ -17,37 +11,6 @@
    - Windows OS (access to [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.2#where-do-i-find-powershell)) or MacOS (access to [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
    
 _Note: The Python Code will be executed as headless / background service_
-
-## Command Syntax:
-
-- This section covers the _**command syntax**_.  
-- Assumption: you have Blender version 3.3 installed on your machine.  
-- Skip to the [_**How-To**_](#how-to) section if you would like to see a working example.  
-
-### a. Windows Machines
-
-```
-cd "C:\Program Files\Blender Foundation\Blender 3.3"
-.\blender.exe -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
-```
-
-### b. MacOS Machines
-
-```
-cd /Applications/Blender.app/Contents/MacOS
-./blender -b -P usd2stl.py -- -i <sample.usd> -o output <output-directory> -s <single.stl>
-```
-
-### In both cases: Windows and MacOS
-```
-- The <sample.usd> is the file to be converted to STL. 
-- The usd2stl.py script will:
-     - output one STL per object found in the <sample.usd> file. 
-     - append .stl to the object names it finds in the <sample.usd> file. 
-     - export the union of all the .stl files as a <single.stl> file.
-- The <sample.usd> and <single.stl> placeholders correspond to file-path and file name.
-- The <output-directory> placeholder corresponds to a file-path of an existing directory.
-```
 
 ## How to execute: <a name="how-to"></a>
 
